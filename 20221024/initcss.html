@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,57 @@
 	<title>CSS 개요</title>
 	<style>
 		/* 내부 스타일시트 */
-	p {
-		color: red;
-		text-decoration: underline;
-	}
+		p {
+			color: red;
+			text-decoration: underline;
+		}
 	</style>
 	<link rel="stylesheet" href="initcss.css">
 </head>
+
 <body>
 	<h3>CSS 개요</h3>
 	<p style="color: chartreuse;
-	text-decoration-style:dashed";>인라인 스타일시트</p>
+	text-decoration-style:dashed" ;>인라인 스타일시트</p>
 	<p>내부 스타일시트</p>
 	<p>외부 스타일시트</p>
+	<p>기본적으로 선택자가 같다면 아래의 선택자가 적용됨</p>
+	<p>스타일 우선순위</p>
+	<ol>
+		<li>사용자 스타일(os에서 적용)</li>
+		<li>제작자 스타일</li>
+		<li>브라우저 기본 스타일</li>
+	</ol>
+	<hr>
+	<h3>제작자 스타일 시트</h3>
+	<p><a href="https://opentutorials.org/module/484/4149" target="_blank">CSS 적용 우선순위</p></a>
+	<ol>
+		<li>!important</li>
+		<li>인라인 스타일시트 (1000)</li>
+		<li>ID 선택자 (100)</li>
+		<li>Class 선택자 (10)</li>
+		<li>Tag 선택자 (1)</li>
+	</ol>
+	<style>
+		body {
+			color: cornflowerblue;
+		}
+		body p {
+			color: black;
+		}
+
+		h1 {
+			color: brown !important;
+		}
+
+		p {
+			color: blue;
+		}
+	</style>
+	<h1 style="color: green;">레드향</h1>
+	<p style="color: red;">껍질에 붉은 빛이...</p>
+	<p>레드향은 한라봉과 귤을...</p>
+	<p>일반 귤보다 2~3배 크고...</p>
 </body>
+
 </html>
