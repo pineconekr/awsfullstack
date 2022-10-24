@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태그의 주요 속성</title>
+</head>
+
+<body>
+  <h3>number</h3>
+  <ul>
+    <form action="#">
+      <li><input type="checkbox">선물용 3kg <input type="number" min="0" max="5" name="num" autofocus>개 (최대 5개)</li>
+      <li><input type="checkbox">선물용 5kg <input type="number" min="0" max="3" name="num">개 (최대 3개)</li>
+      <hr>
+      <h3>range</h3>
+      <form action="#">
+        <li><input type="checkbox">가정용 3kg <input type="range" min="0" max="5" name="rng" id="rng1" required>개
+          (최대 5개)
+          <input type="text" readonly size="5" id="cnt1">
+        </li>
+        <li><input type="checkbox">가정용 5kg <input type="range" min="0" max="3" name="rng" id="rng2">개 (최대 3개)
+        </li>
+        <!-- submit의 value값은 버튼의 문자를 의미 --><br>
+        <input type="submit" value="주문하기">
+      </form>
+      <script>
+        // rng 1에 값이 변경되면 뒤의 함수를 실행
+        // cnt1의 값은 rng1의 값과 같다
+        rng1.oninput = function () {
+          cnt1.value = rng1.value;
+        }
+      </script>
+</body>
+
+</html>

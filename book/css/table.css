@@ -1,0 +1,15 @@
+/* table > tbody > tr > th > | td */
+/* 테이블은 tbody 자동 삽입되므로 선택할 때 주의해야 함 */
+/* 직계를 선택하려면 > 를 넣어야하지만 그냥 공백으로 두면 어디에 있든 먼 후손까지 무조건 선택한다는 의미*/
+
+table, table th, table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px 13px;
+}
+table > thead > tr {
+    background-color: red;
+}
+colgroup > col:first-child {
+    background-color: skyblue;
+}

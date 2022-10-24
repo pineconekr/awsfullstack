@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+  </style>
+  <title>Input</title>
+</head>
+
+<body>
+  <header>
+    <form>
+      <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+          <li>
+            <label for="realname">이름</label>
+            <input type="text" maxlength="10" placeholder="이름을 입력하세요" id="realname">
+          </li>
+          <li>
+            <label for="address">주소지</label>
+            <input type="text" maxlength="10" placeholder="주소지를 입력하세요" id="address">
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" placeholder="이메일을 입력하세요" id="email">
+          </li>
+          <li>
+            <label for="phoneNumber">연락처</label>
+            <input type="tel" placeholder="전화번호를 입력하세요" id="phoneNumber">
+          </li>
+          <li>
+            <label for="deliveryDate">배송 지정 (주문일로부터 최소 2일 후)</label>
+            <br><input type="date" id="deliveryDate">
+          </li>
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+      </div>
+      </ul>
+    </form>
+  </header>
+  <div id="hobbyform">
+    <form>
+      <fieldset>
+        <legend>취미</legend>
+        <label for="h1">수영</label>
+        <input type="checkbox" name="h1" id="h1" title="수영" value="수영">
+        <label for="h2">독서</label>
+        <input type="checkbox" name="h2" id="h2" title="독서" value="독서">
+        <label for="h3">음악</label>
+        <input type="checkbox" name="h3" id="h3" title="음악" value="음악">
+        <input type="submit">
+      </fieldset>
+    </form>
+  </div>
+  <div id="classform">
+    <form>
+      <fieldset>
+        <legend>클래스</legend>
+        <label for="c1">토끼반</label>
+        <input type="radio" name="qks" id="c1">
+        <label for="c2">거북반</label>
+        <input type="radio" name="qks" id="c2">
+        <label for="c3">송이반</label>
+        <input type="radio" name="qks" id="c3">
+        <input type="submit" value="확인">
+      </fieldset>
+    </form>
+  </div>
+  <br>
+  <hr>
+  <div id="container">
+    <h1>회원가입을 환영합니다</h1>
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label for="uid">아이디</label>
+            <input type="text" id="uid">
+          </li>
+          <li>
+            <label for="umail">이메일</label>
+            <input type="text" id="umail">
+          </li>
+          <li>
+            <label for="pwd1">비밀번호</label>
+            <input type="text" id="pwd1">
+          </li>
+          <li>
+            <label for="uage">나이</label>
+            <input type="number" id="uage" value="0" step="1" min="0" max="100">살
+          </li>
+          <li>
+            <label for="udate">생년월일</label>
+            <input type="date" id="udate" value="2001-01-01" min="1900-01-01" max="">
+            <input type="month">
+            <input type="week">
+          </li>
+          <li>
+            <label for="utime">시간</label>
+            <input type="time" id="utime"> or
+            <input type="datetime-local">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <input type="radio" name="mailing" id="mailing_y">
+        <label for="mailing_y">메일 수신</label><br>
+        <input type="radio" name="mailing" id="mailng_n">
+        <label for="mailing_n">메일 수신 안함</label>
+      </fieldset>
+      <div id="buttons">
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+      </div>
+    </form>
+  </div>
+  <hr>
+  <form>
+    <fieldset>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
