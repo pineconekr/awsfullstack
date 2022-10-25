@@ -1,7 +1,12 @@
 p {
-	color:  blue;
+	color: blue;
 	text-decoration-style: double;
 	text-decoration-thickness: 1px;
 	text-decoration-color: brown;
-	text-decoration-line: overline;
+	text-decoration-line: underline;
+}
+
+body>p {
+	color: yellow;
+	text-decoration-style: wavy !important;
 }

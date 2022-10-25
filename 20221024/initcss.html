@@ -16,10 +16,10 @@
 	<link rel="stylesheet" href="initcss.css">
 </head>
 
-<body>
+<body class="colortest">
 	<h3>CSS 개요</h3>
-	<p style="color: chartreuse;
-	text-decoration-style:dashed" ;>인라인 스타일시트</p>
+	<p style="color: midnightblue;
+	text-decoration-style:dashed" ;>인라인 스타일시트 - css에서 !important 를 해주지 않는 이상 무조건 우선순위</p>
 	<p>내부 스타일시트</p>
 	<p>외부 스타일시트</p>
 	<p>기본적으로 선택자가 같다면 아래의 선택자가 적용됨</p>
@@ -30,10 +30,11 @@
 		<li>브라우저 기본 스타일</li>
 	</ol>
 	<hr>
-	<h3>제작자 스타일 시트</h3>
-	<p><a href="https://opentutorials.org/module/484/4149" target="_blank">CSS 적용 우선순위</p></a>
-	<ol>
-		<li>!important</li>
+	<h3 style="color: red;">제작자 스타일 시트</h3>
+	<p><a href="https://opentutorials.org/module/484/4149" target="_blank">CSS 적용 우선순위 [1]</p></a>
+	<p><a href="https://iridescent-zeal.tistory.com/90" target="_blank">CSS 적용 우선순위 [2]</p></a>
+	<ol style="color: red; font-weight: bold;">
+		<li>!important (∞)</li>
 		<li>인라인 스타일시트 (1000)</li>
 		<li>ID 선택자 (100)</li>
 		<li>Class 선택자 (10)</li>
@@ -43,6 +44,7 @@
 		body {
 			color: cornflowerblue;
 		}
+
 		body p {
 			color: black;
 		}
