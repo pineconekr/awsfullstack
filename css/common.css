@@ -6,7 +6,13 @@ body {
   /* 자식요소가 넘치면 숨김*/
 }
 
-#logo {
+#imglogo {
+  width: auto;
+  height: 55px;
+  margin: 25px 25px;
+}
+
+#logo11 {
   /*body 안에 h1 첫번째 자식*/
   text-align: center;
   /*가운데 정렬*/
@@ -18,19 +24,28 @@ body {
   vertical-align: middle;
 }
 
-nav > ul {
+nav {
+  flex: 1;
+  background-color: #232f3e;
+  line-height: 100px;
+}
+
+nav>ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 100px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 30px;
-  background-color: aliceblue;
-  border: 5px solid;
+  font-weight: bold;
+  text-shadow: 5px 5px 60px #00f5fe;
 }
 
 .container {
@@ -59,10 +74,4 @@ nav > ul > li > a {
   height: 100%;
   border: none;
   /*테두리 숨김*/
-}
-
-.sidebar {
-  background-color: skyblue;
-  color: red;
-  border: 2px solid black;
 }
