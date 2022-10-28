@@ -1,0 +1,54 @@
+.wrap {
+	width: 960px;
+}
+
+.float {
+	float: left;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.bgcolor {
+	background-color: burlywood;
+
+}
+
+.onewidth {
+	width: 238.5px;
+}
+
+.twowidth {
+	width: 497px;
+}
+
+.threewidth {
+	width: 719.5px;
+}
+
+.mar-bottom {
+	margin-bottom: 2px;
+}
+
+.mar-right {
+	margin-right: 2px;
+}
+
+.border-radius5 {
+	border-radius: 5px;
+}
+
+.one-height {
+	height: 100px;
+}
+
+.two-height {
+	height: 202px;
+}
+
+.three-height {
+	height: 304px;
+}

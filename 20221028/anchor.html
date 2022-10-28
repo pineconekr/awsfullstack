@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>레이아웃 연습</title>
+	<style>
+		.total-width {
+			width: 960px;
+		}
+
+		.header {
+			border: 3px solid black;
+			text-align: center;
+			font-weight: bold;
+			line-height: 90px;
+			font-size: 30px;
+		}
+
+		.footer {
+			border: 3px solid black;
+			text-align: center;
+			font-weight: bold;
+			line-height: 90px;
+			font-size: 30px;
+		}
+
+		.main-left {
+			border: 3px solid black;
+			text-align: center;
+			font-weight: bold;
+			line-height: 90px;
+		}
+
+		.main-right {
+			border: 3px solid black;
+			text-align: center;
+			font-weight: bold;
+			line-height: 90px;
+		}
+
+		.float {
+			float: left;
+		}
+
+		.clearfix::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.bg-color {
+			background-color: burlywood;
+		}
+
+		.one-width {
+			width: 238.5px;
+		}
+
+		.two-width {
+			width: 497px;
+		}
+
+		.three-width {
+			width: 719.5px;
+		}
+
+		.mar-bottom {
+			margin-bottom: 2px;
+		}
+
+		.mar-right {
+			margin-right: 2px;
+		}
+
+		.border-radius5 {
+			border-radius: 5px;
+		}
+
+		.one-height {
+			height: 100px;
+		}
+
+		.two-height {
+			height: 202px;
+		}
+
+		.three-height {
+			height: 304px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="header total-width one-height bg-color border-radius5 mar-bottom">header</div>
+		<div class="main mar-bottom clearfix">
+			<div class="main-left float">
+				<div class="bg-color one-width one-height border-radius5 mar-bottom mar-right">this is</div>
+				<div class="bg-color one-width one-height border-radius5 mar-bottom mar-right">main-left</div>
+				<div class="bg-color one-width two-height border-radius5 mar-bottom mar-right">area</div>
+			</div>
+			<div class="main-right float">
+				<div class="main-right-top">
+					<div class="main-right-top-left float">
+						<div class="main-right-top-left-2 bg-color one-width one-height border-radius5 mar-bottom mar-right">this is</div>
+						<div class="main-right-top-left-1 bg-color one-width one-height border-radius5 mar-bottom mar-right">main-right-top-left</div>
+						<div class="main-right-top-left-3 bg-color one-width one-height border-radius5 mar-bottom mar-right">area</div>
+					</div>
+					<div class="main-right-top-middle float">
+						<div class="main-right-top-middle-1 bg-color one-width two-height border-radius5 mar-bottom mar-right">this is</div>
+						<div class="main-right-top-middle-2 bg-color one-width one-height border-radius5 mar-bottom mar-right">main-right-top-middle area</div>
+					</div>
+					<div class="main-right-top-right float">
+						<div class="main-right-top-right-1 bg-color one-width one-height border-radius5 mar-bottom mar-right">this is</div>
+						<div class="main-right-top-right-2 bg-color one-width two-height border-radius5 mar-bottom mar-right">main-right-top-right area</div>
+					</div>
+				</div>
+				<div class="main-right-bottom float bg-color one-height three-width border-radius5">main-right-bottom area</div>
+			</div>
+		</div>
+		<div class="footer total-width one-height bg-color border-radius5">footer</div>
+	</div>
+</body>
+</html>
